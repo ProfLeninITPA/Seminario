@@ -1,0 +1,76 @@
+body {
+    background: #063faa;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #036f22, #09a750);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2703b7, #027d89); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-white{
+    background-color: #fff;
+}
+/* Carrusel: mostrar la imagen completa dentro del contenedor sin recortar */
+.carousel-inner {
+    text-align: center;
+}
+.carousel-inner img {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+/* Limitar la altura visible del carrusel (para no ocupar demasiado espacio vertical)
+   pero mantener las proporciones de la imagen */
+@media (max-width: 576px) {
+    .carousel-inner { max-height: 250px; }
+    .carousel-inner img { max-height: 250px; }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .carousel-inner { max-height: 320px; }
+    .carousel-inner img { max-height: 320px; }
+}
+
+/* Mejorar responsividad de contenedores */
+@media (max-width: 768px) {
+    .container-fluid.container-lg {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    
+    header {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+}
+
+/* Ajustar tamaños de fuente para móviles */
+@media (max-width: 576px) {
+    .display-3 { font-size: 1.75rem; }
+    .fs-3 { font-size: 1rem !important; }
+    .btn { padding: 0.5rem 1rem !important; font-size: 0.875rem !important; }
+    h1 { font-size: 1.75rem; }
+}
+
+/* Estilos para la fila de logos fijos debajo del carrusel */
+.fixed-logos {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.fixed-logos .logo-item {
+    max-height: 80px;
+    width: auto;
+    object-fit: contain;
+    filter: none;
+    transition: transform .15s ease-in-out;
+}
+.fixed-logos .logo-item:hover {
+    transform: translateY(-4px);
+}
+
+@media (max-width: 576px) {
+    .fixed-logos .logo-item { max-height: 56px; }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .fixed-logos .logo-item { max-height: 64px; }
+}
