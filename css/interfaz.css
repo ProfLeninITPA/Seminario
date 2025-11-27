@@ -7,27 +7,30 @@ body {
 .bg-white{
     background-color: #fff;
 }
-/* Carrusel: mostrar la imagen completa dentro del contenedor sin recortar */
+/* Carrusel: forzar altura uniforme por breakpoint (manteniendo proporción)
+   - `object-fit: cover` asegura que el contenedor se rellene uniformemente.
+   - Las imágenes conservan la misma altura en cada slide.
+*/
 .carousel-inner {
     text-align: center;
+    overflow: hidden;
 }
 .carousel-inner img {
-    object-fit: contain;
+    height: 360px;
+    width: auto;
     max-width: 100%;
-    height: auto;
-    display: inline-block;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Limitar la altura visible del carrusel (para no ocupar demasiado espacio vertical)
-   pero mantener las proporciones de la imagen */
 @media (max-width: 576px) {
-    .carousel-inner { max-height: 250px; }
-    .carousel-inner img { max-height: 250px; }
+    .carousel-inner img { height: 250px; }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-    .carousel-inner { max-height: 320px; }
-    .carousel-inner img { max-height: 320px; }
+    .carousel-inner img { height: 320px; }
 }
 
 /* Mejorar responsividad de contenedores */
