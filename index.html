@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+  <link rel="shortcut icon" href="img\itpalogo.png" />
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seminario</title>
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="css/interfaz.css" />
+     <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/logos/ITPA.png" alt="Logo" width="150" height="50" class="d-inline-block align-text-top">
+            Instituto Tecnológico de Pabellón de Arteaga
+          </a>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bienvenidos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="main.html">Principal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="conferencias.html">Conferencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="talleres.html">Talleres</a>
+              </li>
+                            <li class="nav-item">
+                <a class="nav-link" href="coloquios.html">Coloquios</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- BARRA DE NAVEGACION -->
+      
+      
+        <div id="carouselExample" class="carousel slide carousel-dark" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"></button>
+          </div>
+          <div class="carousel-inner" style="text-align: center;">
+            <div class="carousel-item active">
+              <img src="img/carrete/Copia de Mecatronica.png" class="d-block mx-auto" alt="Imagen 1" style="max-height: 400px; width: auto;">
+            </div>
+            <div class="carousel-item">
+              <img src="img/carrete/Inteligencia Artificial.png" class="d-block mx-auto" alt="Imagen 2" style="max-height: 400px; width: auto;">
+            </div>
+            <div class="carousel-item">
+              <img src="img/carrete/TICS.png" class="d-block mx-auto" alt="Imagen 3" style="max-height: 400px; width: auto;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      <!-- FIN CARRUSEL DE IMAGENES -->
+      <!-- LOGOS FIJOS DE PATROCINADORES / COLABORADORES -->
+      <div class="container-fluid container-lg my-4">
+        <div class="row justify-content-center align-items-center g-3 fixed-logos">
+          <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+            <img src="img/logos/ITPA.png" alt="ITPA" class="img-fluid logo-item" />
+          </div>
+          <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+            <img src="img/logos/TECNM blanco.png" alt="TECNM" class="img-fluid logo-item" />
+          </div>
+          <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+            <img src="img/logos/IEEE.png" alt="IEEE" class="img-fluid logo-item" />
+          </div>
+        </div>
+      </div>
+      
+      <!-- ENCABEZADO -->
+      <header class="py-3 py-md-5">
+        <div class="container-fluid container-lg px-3 px-md-5 pb-5">
+            <div class="row gx-3 gx-md-5 align-items-center">
+                 <div class="col-12 col-lg-6 col-xxl-5" style="order: 2;">
+                    <!-- Header text content-->
+                    <!-- <div class="text-center text-xxl-start">
+                        <div class="fs-3 fw-light text-muted text-white bw">Bienvenido</div>
+                        <h1 class="display-3 fw-bolder mb-5 bw"><span class="text-gradient d-inline">Seminario</span></h1>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="login.html">Inicio de sesión</a>
+                            <a class="btn btn-secondary btn-lg px-5 py-3 fs-6 fw-bolder" href="registro.html">Registro</a>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="col-12 col-lg-6 col-xxl-7" style="order: 1;">
+                    <!-- Header profile picture-->
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid container-lg my-3 my-md-5">
+        <div class="row g-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+
+            </div>
+
+            <div class="py-4">
+               
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- About Section-->
+    <section class="bg-dark py-4 py-md-5">
+      <div class="container-fluid container-lg px-3 px-md-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-xxl-8">
+              <div class="text-center my-5">
+                  <p class="lead fw-light mb-4" style="color: white">Dirección: Carretera a la estación de Rincón de Romos, Km. 1, 20670 Pabellón de Arteaga, Ags.</p>
+                  <p class="lead fw-light mb-4" style="color: white">Teléfono: 465 958 2730</p>
+                  <br><br>
+                  <p class="lead fw-light mb-4" style="color: white">Diseñado por: Nidia Vanessa Chávez Rendón (GalloConTennis)</p>
+                  <p class="lead fw-light mb-4" style="color: white">Desarrollado por: Oscar Lenin Espinoza Alvarez</p>
+                  <p class="lead fw-light mb-4"></p>
+                  <div class="d-flex justify-content-center fs-2 gap-4">
+                      <br><br><br>
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+</section>
+</main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5 ">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0" style="color: white">Copyright &copy; ITPA x GalloConTennis - Oscar Lenin Espinoza Alvarez</div></div>
+                    <div class="col-auto">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!--CDNS Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+</html>
