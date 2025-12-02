@@ -11587,6 +11587,10 @@ html {
   max-height: 40rem;
   max-width: 40rem;
 }
+.img-ajustada {
+  height: 100px;   /* altura fija */
+  object-fit: cover; /* recorta proporcionalmente */
+}
 .profile .profile-img {
   height: 80vw;
   max-height: 45rem;
